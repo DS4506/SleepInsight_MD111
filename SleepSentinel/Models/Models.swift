@@ -1,6 +1,7 @@
+
 import Foundation
 
-struct SleepNight: Identifiable, Codable {
+struct SleepNight: Identifiable, Codable, Equatable {
     var id: UUID = .init()
     var date: Date
     var inBed: TimeInterval?
@@ -9,16 +10,17 @@ struct SleepNight: Identifiable, Codable {
     var wake: Date?
     var midpoint: Date?
     var efficiency: Double?
+    var inferred: Bool = false
 }
 
-struct SleepSettings: Codable {
+struct SleepSettings: Codable, Equatable {
     var targetBedtime: DateComponents
     var targetWake: DateComponents
     var midpointToleranceMinutes: Int = 45
     var remindersEnabled: Bool = false
 }
 
-struct WeeklySummary {
+struct WeeklySummary: Codable, Equatable {
     let start: Date
     let end: Date
     let avgDurationMin: Double
@@ -30,7 +32,7 @@ struct WeeklySummary {
     let worstNight: SleepNight?
 }
 
-struct Recommendation: Identifiable {
+struct Recommendation: Identifiable, Equatable {
     let id = UUID()
     let text: String
     let kind: Kind

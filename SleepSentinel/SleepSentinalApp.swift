@@ -1,13 +1,16 @@
+
 import SwiftUI
 
 @main
-struct SleepInsightsApp: App {
+struct SleepSentinelApp: App {
     @StateObject private var vm = SleepVM()
+
     var body: some Scene {
         WindowGroup {
             RootView()
                 .environmentObject(vm)
-                .onAppear { if vm.nights.isEmpty { vm.loadDemoData() } }
+                .onAppear { vm.bootstrap() }
+                .tint(Theme.accent)
         }
     }
 }

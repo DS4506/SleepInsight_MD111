@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		4778D4312EA951DF00A3DB70 /* SleepInsights_Starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepInsights_Starter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4778D4312EA951DF00A3DB70 /* SleepSentinel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepSentinel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		4778D4332EA951DF00A3DB70 /* SleepInsights_Starter */ = {
+		4778D4332EA951DF00A3DB70 /* SleepSentinel */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SleepInsights_Starter;
+			path = SleepSentinel;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +32,7 @@
 		4778D4282EA951DF00A3DB70 = {
 			isa = PBXGroup;
 			children = (
-				4778D4332EA951DF00A3DB70 /* SleepInsights_Starter */,
+				4778D4332EA951DF00A3DB70 /* SleepSentinel */,
 				4778D4322EA951DF00A3DB70 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,7 +40,7 @@
 		4778D4322EA951DF00A3DB70 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4778D4312EA951DF00A3DB70 /* SleepInsights_Starter.app */,
+				4778D4312EA951DF00A3DB70 /* SleepSentinel.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +48,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4778D4302EA951DF00A3DB70 /* SleepInsights_Starter */ = {
+		4778D4302EA951DF00A3DB70 /* SleepSentinel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4778D43C2EA951DF00A3DB70 /* Build configuration list for PBXNativeTarget "SleepInsights_Starter" */;
+			buildConfigurationList = 4778D43C2EA951DF00A3DB70 /* Build configuration list for PBXNativeTarget "SleepSentinel" */;
 			buildPhases = (
 				4778D42D2EA951DF00A3DB70 /* Sources */,
 				4778D42E2EA951DF00A3DB70 /* Frameworks */,
@@ -61,13 +61,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				4778D4332EA951DF00A3DB70 /* SleepInsights_Starter */,
+				4778D4332EA951DF00A3DB70 /* SleepSentinel */,
 			);
-			name = SleepInsights_Starter;
+			name = SleepSentinel;
 			packageProductDependencies = (
 			);
 			productName = SleepInsights_Starter;
-			productReference = 4778D4312EA951DF00A3DB70 /* SleepInsights_Starter.app */;
+			productReference = 4778D4312EA951DF00A3DB70 /* SleepSentinel.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -85,7 +85,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4778D42C2EA951DF00A3DB70 /* Build configuration list for PBXProject "SleepInsights_Starter" */;
+			buildConfigurationList = 4778D42C2EA951DF00A3DB70 /* Build configuration list for PBXProject "SleepSentinel" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -99,7 +99,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4778D4302EA951DF00A3DB70 /* SleepInsights_Starter */,
+				4778D4302EA951DF00A3DB70 /* SleepSentinel */,
 			);
 		};
 /* End PBXProject section */
@@ -251,15 +251,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = SleepInsights_Starter/SleepInsights_Starter.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "SleepSentinel/SleepSentinel.entitlements\n";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A3PF3W86P6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "SleepInsights needs access to sleep to show reports.";
-				INFOPLIST_KEY_NSHealthShareUsageDescription = "SleepInsights needs access to sleep to show reports.";
-				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "SleepInsights needs access to sleep to show reports.";
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "SleepSentinel needs access to sleep to show reports.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "SleepSentinel needs access to sleep to show reports.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -270,7 +269,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "SDGKU.com.SleepInsights-Starter";
+				PRODUCT_BUNDLE_IDENTIFIER = com.willie.SleepSentinel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -287,15 +286,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = SleepInsights_Starter/SleepInsights_Starter.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "SleepSentinel/SleepSentinel.entitlements\n";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A3PF3W86P6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "SleepInsights needs access to sleep to show reports.";
-				INFOPLIST_KEY_NSHealthShareUsageDescription = "SleepInsights needs access to sleep to show reports.";
-				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "SleepInsights needs access to sleep to show reports.";
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "SleepSentinel needs access to sleep to show reports.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "SleepSentinel needs access to sleep to show reports.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -306,7 +304,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "SDGKU.com.SleepInsights-Starter";
+				PRODUCT_BUNDLE_IDENTIFIER = com.willie.SleepSentinel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -321,7 +319,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4778D42C2EA951DF00A3DB70 /* Build configuration list for PBXProject "SleepInsights_Starter" */ = {
+		4778D42C2EA951DF00A3DB70 /* Build configuration list for PBXProject "SleepSentinel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4778D43A2EA951DF00A3DB70 /* Debug */,
@@ -330,7 +328,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4778D43C2EA951DF00A3DB70 /* Build configuration list for PBXNativeTarget "SleepInsights_Starter" */ = {
+		4778D43C2EA951DF00A3DB70 /* Build configuration list for PBXNativeTarget "SleepSentinel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4778D43D2EA951DF00A3DB70 /* Debug */,
